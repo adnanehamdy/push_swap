@@ -6,20 +6,20 @@
 /*   By: ahamdy <ahamdy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 10:18:12 by ahamdy            #+#    #+#             */
-/*   Updated: 2021/12/21 11:28:31 by ahamdy           ###   ########.fr       */
+/*   Updated: 2022/02/10 12:01:21 by ahamdy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_list	*ft_lstnew(int content)
+t_list	*ft_lstnew(int cont)
 {
 	t_list	*head;
 
 	head = (t_list *)malloc(sizeof(t_list));
 	if (!head)
 		return (0);
-	head->content = content;
+	head->cont = content;
 	head->next = NULL;
 	return (head);
 }
